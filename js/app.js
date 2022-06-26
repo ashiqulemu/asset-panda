@@ -10,3 +10,10 @@
       this.classList.add('active');
     });
   }
+
+
+
+  function menuBar(){
+    let menu = document.getElementById('menuBar');
+    console.log(menu.classList.toggle('menu-open'));
+  }
