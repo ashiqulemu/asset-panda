@@ -1,11 +1,15 @@
 // variables
 
 $primary: #f76969;
-$secondary: #54C0CB;
-$txt: #585858;
+$secondary: #5cb9f3;
+$txt: #474242;
 $white: #fff;
 
-// needable  classes  
+// needable  classes 
+
+.bg-theme-secondary{
+   background: #2730604d;
+}
 
 .txt-secondary {
     color: $secondary;
@@ -183,7 +187,7 @@ body {
             .nav-link {
                 margin-right: 0;
                 font-size: 13px;
-                color: $secondary;
+                color: #424242;
                 padding: 8px 12px;
                 border-radius: 4px;
                 font-family: 'poppins-regular';
@@ -344,13 +348,13 @@ body {
                 padding: 7px 10px;
                 font-size: 12px;
                 text-transform: capitalize;
-                color: $secondary;
+                color: $txt;
                 text-decoration: none;
 
                 .iconify {
                     font-size: 20px;
                     margin-right: 3px;
-                    color: $secondary;
+                    color: #2196f3;
                 }
             }
 
@@ -437,7 +441,7 @@ footer {
 .search {
     width: 160px;
     outline: 0;
-    border: 1px solid #54C0CB;
+    border: 1px solid $secondary;
     height: 30px;
     border-radius: 3px;
     padding: 0 5px;
@@ -446,7 +450,7 @@ footer {
 .src-btn {
     border: 0;
     height: 30px;
-    background-color: #54C0CB;
+    background-color: $secondary;
     color: white;
     border-radius: 3px;
 

@@ -1,5 +1,9 @@
+.bg-theme-secondary {
+  background: rgba(39, 48, 96, 0.3019607843);
+}
+
 .txt-secondary {
-  color: #54C0CB;
+  color: #5cb9f3;
 }
 
 .txt-primary {
@@ -7,7 +11,7 @@
 }
 
 .bg-secondary {
-  background: #54C0CB;
+  background: #5cb9f3;
 }
 
 .bg-primary {
@@ -51,7 +55,7 @@ html {
 .card-style .content .title {
   font-size: 18px;
   margin: 12px 0 7px;
-  color: #54C0CB;
+  color: #5cb9f3;
   text-transform: capitalize;
   font-family: "poppins-medium";
 }
@@ -73,7 +77,7 @@ html {
   width: 35px;
   border-radius: 4px;
   color: #f76969;
-  background-color: #54C0CB;
+  background-color: #5cb9f3;
 }
 .card-style .content .social a .iconify {
   font-size: 17px;
@@ -107,7 +111,7 @@ body {
 }
 
 .topbar {
-  background: #54C0CB;
+  background: #5cb9f3;
 }
 .topbar .inner {
   display: flex;
@@ -122,7 +126,7 @@ body {
   justify-content: center;
   color: #f76969;
   height: 100%;
-  color: #54C0CB;
+  color: #5cb9f3;
   background: #ffd03a;
   margin-right: 2px;
 }
@@ -141,7 +145,7 @@ body {
 .siteHeader .navCustom .nav-item .nav-link {
   margin-right: 0;
   font-size: 13px;
-  color: #54C0CB;
+  color: #424242;
   padding: 8px 12px;
   border-radius: 4px;
   font-family: "poppins-regular";
@@ -173,7 +177,7 @@ body {
 .breadcrumb {
   padding: 5px;
   margin-bottom: 0.6rem;
-  background-color: #54C0CB;
+  background-color: #5cb9f3;
   color: #fff5e2;
   width: 100%;
   display: flex;
@@ -287,13 +291,13 @@ body {
   padding: 7px 10px;
   font-size: 12px;
   text-transform: capitalize;
-  color: #54C0CB;
+  color: #474242;
   text-decoration: none;
 }
 .page-content .menuBar .items a .iconify {
   font-size: 20px;
   margin-right: 3px;
-  color: #54C0CB;
+  color: #2196f3;
 }
 .page-content .menuBar .items:hover {
   background: #f76969;
@@ -336,7 +340,7 @@ footer .nav-item a:hover {
   font-size: 12px;
   text-transform: capitalize;
   color: #ffffff;
-  background: #54C0CB;
+  background: #5cb9f3;
   padding: 5px 10px;
   margin: 5px 3px;
   border-radius: 17px;
@@ -357,7 +361,7 @@ footer .nav-item a:hover {
 .search {
   width: 160px;
   outline: 0;
-  border: 1px solid #54C0CB;
+  border: 1px solid #5cb9f3;
   height: 30px;
   border-radius: 3px;
   padding: 0 5px;
@@ -366,7 +370,7 @@ footer .nav-item a:hover {
 .src-btn {
   border: 0;
   height: 30px;
-  background-color: #54C0CB;
+  background-color: #5cb9f3;
   color: white;
   border-radius: 3px;
 }
