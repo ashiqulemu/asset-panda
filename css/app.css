@@ -188,7 +188,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .topMenuBar {
     justify-content: center;
     flex-direction: column;
@@ -238,7 +238,7 @@ body {
     padding: 15px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .page-content .menuBar {
     margin-left: -180px;
   }
@@ -407,7 +407,7 @@ footer .nav-item a:hover {
 
 .data-container {
   padding: 0 7px;
-  overflow-x: auto;
+  overflow-x: scroll;
   max-width: 100vw;
 }
 
