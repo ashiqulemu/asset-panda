@@ -113,7 +113,8 @@
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     <span class="iconify text-black" data-icon="bx:user-circle"></span>
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" aria-labelledby="dropdownItem">
+                                <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg"
+                                    aria-labelledby="dropdownItem">
                                     <li><a class="dropdown-item" href="#">Introduction</a></li>
                                     <li><a class="dropdown-item" href="#">Mission</a></li>
 
@@ -131,7 +132,11 @@
 
 
     <div class="page-content">
-        <div class="menuBar">
+        <div class="menuBar" id="menuBar">
+            <div class="switch" onclick="menuBar();">
+                <span class="iconify iconOpen" data-icon="lucide:sidebar-open"></span>
+                <span class="iconify iconClose" data-icon="lucide:sidebar-close"></span>
+            </div>
             <div class="items">
                 <a href="">
                     <span class="iconify" data-icon="clarity:block-outline-badged"></span>
@@ -211,7 +216,34 @@
                 </a>
             </div>
         </div>
-        <div class="content"></div>
+        <div class="content">
+            <!-- breadcrumb -->
+            <div class="breadcrumb">
+                Asset
+            </div>
+            <!-- top menu -->
+            <div class="topMenuBar">
+                <div class="leftItems">
+                    <form class="ps-2">
+                        <input type="search" class="search">
+                        <button class="src-btn">Search</button>
+                    </form>
+                </div>
+                <div class="rightItems">
+                    <a href="" class="btn-theme">
+                        <span class="iconify" data-icon="bxs:book-add"></span> Add New
+                    </a>
+                    <a href="" class="btn-theme">
+                        <span class="iconify" data-icon="dashicons:database-import"></span> Import Asset
+                    </a>
+                    <a href="" class="btn-theme bg-danger">
+                        <span class="iconify" data-icon="ant-design:delete-filled"></span> Delete Asset
+                    </a>
+                </div>
+            </div>
+            <!-- data table  -->
+            
+        </div>
     </div>
 
 
