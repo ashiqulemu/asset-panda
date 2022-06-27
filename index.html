@@ -48,7 +48,7 @@
                 <nav class="navbar navbar-expand-lg navbar-light py-0 bg-light ">
 
                     <a class="navbar-brand" href="/">
-                        <img src="./images/brand.png" class="" >
+                        <img src="./images/brand.png" class="">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -129,8 +129,6 @@
         </div>
 
     </section>
-
-
     <div class="page-content">
         <div class="menuBar" id="menuBar">
             <div class="switch" onclick="menuBar();">
@@ -138,7 +136,7 @@
                 <span class="iconify iconClose" data-icon="lucide:sidebar-close"></span>
             </div>
             <div class="items">
-                <a href="">
+                <a href="#" onclick="activeMenu(event);">
                     <span class="iconify" data-icon="clarity:block-solid"></span>
                     <span>Assets</span>
                 </a>
@@ -244,9 +242,9 @@
             <!-- data table -->
 
             <div class="data-container">
-                <table class="  table-custom shadow-sm bg-white"  style="width:100%">
+                <table class="  table-custom shadow-sm bg-white" style="width:100%">
                     <thead>
-                        <tr >
+                        <tr>
                             <th style="width: 15%;">Name</th>
                             <th>Cost</th>
                             <th>Area</th>
@@ -451,151 +449,111 @@
 
         </div>
     </div>
-
-
     <!-- add new asset -->
-
     <div class="modal fade" id="addNewAsset" tabindex="-1" aria-labelledby="addNewAssetLabel" aria-hidden="true">
         <div class="modal-dialog  modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h6 class="modal-title text-center" id="addNewAssetLabel">Add New Asset</h6>
-              <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title text-center" id="addNewAssetLabel">Add New Asset</h6>
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Est Cost</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Replacement Cost</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Asset ID</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Location</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Area</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Category</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Brand</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Model</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Serial</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Purchase Date</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Desctiption:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-submit py-2 me-3">Add Asset</button>
+                </div>
             </div>
-            <div class="modal-body">
-              <form>
-                <div class="mb-3">
-                  <label for="" class="col-form-label">Name</label>
-                  <input type="text" class="form-control" >
-                </div>
-                <div class="mb-3">
-                  <label for="" class="col-form-label">Est Cost</label>
-                  <input type="number" class="form-control">
-                </div>
-                <div class="mb-3">
-                  <label for="" class="col-form-label">Replacement Cost</label>
-                  <input type="number" class="form-control">
-                </div>
-                <div class="mb-3">
-                  <label for="" class="col-form-label">Asset ID</label>
-                  <input type="number" class="form-control">
-                </div>
-                <div class="mb-3">
-                  <label for="" class="col-form-label">Location</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="mb-3">
-                  <label for="" class="col-form-label">Area</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="mb-3">
-                  <label for="" class="col-form-label">Category</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="mb-3">
-                  <label for="" class="col-form-label">Brand</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="mb-3">
-                  <label for="" class="col-form-label">Model</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="mb-3">
-                  <label for="" class="col-form-label">Serial</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="mb-3">
-                  <label for="" class="col-form-label">Purchase Date</label>
-                  <input type="date" class="form-control">
-                </div>
-                <div class="mb-3">
-                  <label for="message-text" class="col-form-label">Desctiption:</label>
-                  <textarea class="form-control" id="message-text"></textarea>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-              <button type="button" class="btn btn-submit py-2 me-3">Add Asset</button>
-            </div>
-          </div>
         </div>
-      </div>
-
-
+    </div>
     <script src="./js/bootstrap@5.1.3bundle.min.js"></script>
     <script src="./js/iconify.min.js"></script>
-    <script src="./js/app.js"></script>
+
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <!-- <script src="./js/slick.min.js" type="text/javascript"></script> -->
 
     <script type="text/javascript">
 
-        $(document).ready(function () {
-
-            //     $('.testimonial').slick({
-            //         centerMode: true,
-            //         centerPadding: '0px',
-            //         slidesToShow: 2,
-            //         slidesToScroll: 1,
-            //         draggable: true,
-            //         swipeToSlide: true,
-            //         arrows: false,
-            //         dots: true,
-            //         responsive: [
-            //             {
-            //                 breakpoint: 1024,
-            //                 settings: {
-            //                     slidesToShow: 2,
-            //                     slidesToScroll: 1,
-            //                     arrows: true,
-            //                 }
-            //             },
-            //             {
-            //                 breakpoint: 768,
-            //                 settings: {
-            //                     arrows: false,
-            //                     dots: true,
-            //                     centerMode: true,
-            //                     centerPadding: '0px',
-            //                     slidesToShow: 1,
-            //                     slidesToScroll: 1
-            //                 }
-            //             },
-            //             {
-            //                 breakpoint: 600,
-            //                 settings: {
-            //                     arrows: false,
-            //                     dots: true,
-            //                     slidesToShow: 1,
-            //                     slidesToScroll: 1
-            //                 }
-            //             },
-            //             {
-            //                 breakpoint: 480,
-            //                 settings: {
-            //                     arrows: false,
-            //                     dots: true,
-            //                     slidesToShow: 1,
-            //                     slidesToScroll: 1
-            //                 }
-            //             },
-            //         ]
-            //     }); 
-
-        });
 
 
-        // slider main
 
-        // $('#carouselMain').carousel({
-        //     interval: 3000,
-        //     cycle: true
-        // });
+
+
+        
+
+
+
+        // function activeMenu(){
+        //     let t = document.querySelectorAll(".items");
+        //     for (let i = 0; i < t.length; i++) {
+        //         console.log(t);
+        //     }
+        // }
+
+        // function activeMenu(){
+        //     let t = document.querySelectorAll(".items");
+        //     for (let i = 0; i < t.length; i++) {
+        //         console.log(t);
+        //     }
+        // }
+
+        // window.onload = activeMenu;
+
 
 
     </script>
-
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
