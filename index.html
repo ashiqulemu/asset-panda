@@ -53,7 +53,7 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="iconify text-white fs-3" data-icon="gg:menu-grid-o"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ms-auto navCustom">
@@ -230,7 +230,7 @@
                     </form>
                 </div>
                 <div class="rightItems">
-                    <a href="" class="btn-theme">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#addNewAsset" class="btn-theme">
                         <span class="iconify" data-icon="bxs:book-add"></span> Add New
                     </a>
                     <a href="" class="btn-theme">
@@ -451,6 +451,76 @@
 
         </div>
     </div>
+
+
+    <!-- add new asset -->
+
+    <div class="modal fade" id="addNewAsset" tabindex="-1" aria-labelledby="addNewAssetLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title text-center" id="addNewAssetLabel">Add New Asset</h6>
+              <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="" class="col-form-label">Name</label>
+                  <input type="text" class="form-control" >
+                </div>
+                <div class="mb-3">
+                  <label for="" class="col-form-label">Est Cost</label>
+                  <input type="number" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="" class="col-form-label">Replacement Cost</label>
+                  <input type="number" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="" class="col-form-label">Asset ID</label>
+                  <input type="number" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="" class="col-form-label">Location</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="" class="col-form-label">Area</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="" class="col-form-label">Category</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="" class="col-form-label">Brand</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="" class="col-form-label">Model</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="" class="col-form-label">Serial</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="" class="col-form-label">Purchase Date</label>
+                  <input type="date" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Desctiption:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+              <button type="button" class="btn btn-submit py-2 me-3">Add Asset</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     <script src="./js/bootstrap@5.1.3bundle.min.js"></script>

@@ -139,7 +139,7 @@ body {
 
 @media (max-width: 375px) {
   .siteHeader .navbar-brand img {
-    width: 200px;
+    width: 90px;
   }
 }
 .siteHeader .navCustom .nav-item .nav-link {
@@ -358,6 +358,28 @@ footer .nav-item a:hover {
   font-size: 1rem;
 }
 
+.btn-submit {
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #ffffff;
+  background: #0a58ca;
+  padding: 10px 10px;
+  margin: 5px 3px;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+  font-family: "poppins-regular";
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+.btn-submit:hover {
+  background: #f76969;
+  color: #fff;
+}
+.btn-submit .iconify {
+  font-size: 1rem;
+}
+
 .search {
   width: 160px;
   outline: 0;
@@ -456,4 +478,27 @@ footer .nav-item a:hover {
 }
 .table-custom tbody tr:nth-child(even) {
   background: #f7f4ff;
+}
+
+.modal {
+  background: rgba(0, 25, 62, 0.5803921569);
+}
+
+.modal-content {
+  border-radius: 1.3rem;
+}
+
+.modal-header {
+  background: #0a58ca;
+  color: white;
+  border-bottom: 1px solid #0a58ca;
+}
+
+.navbar-toggler {
+  background-color: #4c8fc7;
+  border: 1px solid #4c8fc7;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }/*# sourceMappingURL=app.css.map */

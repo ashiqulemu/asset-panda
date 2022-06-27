@@ -177,7 +177,7 @@ body {
     .navbar-brand {
         img {
             @media(max-width:375px) {
-                width: 200px;
+                width: 90px;
             }
         }
     }
@@ -437,6 +437,28 @@ footer {
         font-size: 1rem;
     }
 }
+.btn-submit {
+    font-size: 13px;
+    text-transform: capitalize;
+    color: #ffffff;
+    background: #0a58ca;
+    padding: 10px 10px;
+    margin: 5px 3px;
+    border-radius:4px;
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+    font-family: "poppins-regular";
+    transition: all 0.3s ease;
+    min-width: 100px; 
+    &:hover {
+        background: $primary;
+        color: $white;
+    }
+
+    .iconify {
+        font-size: 1rem;
+    }
+}
 
 .search {
     width: 160px;
@@ -563,4 +585,30 @@ footer {
             }
         }
     }
+}
+
+
+// modal customization
+
+.modal{
+    background: #00193e94;
+}
+.modal-content{
+    border-radius: 1.30rem;
+}
+.modal-header{
+    background: #0a58ca;
+    color: white;
+    border-bottom: 1px solid #0a58ca;
+}
+
+// navmenu customization
+
+.navbar-toggler{
+    background-color: #4c8fc7;
+    border: 1px solid #4c8fc7;
+}
+
+.navbar-toggler:focus { 
+    box-shadow: none;
 }
