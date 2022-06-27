@@ -176,6 +176,7 @@ body {
 .siteHeader {
     .navbar-brand {
         img {
+            width: 100px;
             @media(max-width:375px) {
                 width: 90px;
             }

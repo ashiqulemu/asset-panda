@@ -137,6 +137,9 @@ body {
   color: #fff;
 }
 
+.siteHeader .navbar-brand img {
+  width: 100px;
+}
 @media (max-width: 375px) {
   .siteHeader .navbar-brand img {
     width: 90px;
