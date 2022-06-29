@@ -136,79 +136,79 @@
                 <span class="iconify iconClose" data-icon="lucide:sidebar-close"></span>
             </div>
             <div class="items">
-                <a href="#" onclick="activeMenu(event);">
+                <a href="#" >
                     <span class="iconify" data-icon="clarity:block-solid"></span>
                     <span>Assets</span>
                 </a>
             </div>
             <div class="items">
-                <a href="">
+                <a href="#">
                     <span class="iconify" data-icon="map:insurance-agency"></span>
                     <span>Insurance</span>
                 </a>
             </div>
             <div class="items">
-                <a href="">
+                <a href=" #"  >
                     <span class="iconify" data-icon="gala:secure"></span>
                     <span>warranties</span>
                 </a>
             </div>
             <div class="items">
-                <a href="">
+                <a href="#">
                     <span class="iconify" data-icon="ep:location"></span>
                     <span>Location</span>
                 </a>
             </div>
             <div class="items">
-                <a href="">
+                <a href="#">
                     <span class="iconify" data-icon="carbon:area"></span>
                     <span>area</span>
                 </a>
             </div>
             <div class="items">
-                <a href="">
+                <a href="#">
                     <span class="iconify" data-icon="carbon:category"></span>
                     <span>category</span>
                 </a>
             </div>
             <div class="items">
-                <a href="">
+                <a href="#">
                     <span class="iconify" data-icon="clarity:blocks-group-outline-badged"></span>
                     <span>group </span>
                 </a>
             </div>
             <div class="items">
-                <a href="">
+                <a href="#">
                     <span class="iconify" data-icon="ant-design:contacts-outlined"></span>
                     <span>contacts</span>
                 </a>
             </div>
             <div class="items">
-                <a href="">
+                <a href="#">
                     <span class="iconify" data-icon="akar-icons:people-group"></span>
                     <span>vendor</span>
                 </a>
             </div>
             <div class="items">
-                <a href="">
+                <a href="#">
                     <span class="iconify" data-icon="dashicons:images-alt2"></span>
                     <span>images</span>
                 </a>
             </div>
             <div class="items">
-                <a href="">
+                <a href="#">
                     <span class="iconify" data-icon="simple-line-icons:calender"></span>
                     <span>calender</span>
                 </a>
             </div>
             <div class="items">
-                <a href="">
+                <a href="#">
                     <span class="iconify" data-icon="et:documents"></span>
                     <span>documents</span>
                 </a>
             </div>
             <div class="items">
-                <a href="">
+                <a href="#">
                     <span class="iconify" data-icon="arcticons:documents"></span>
                     <span>reports</span>
                 </a>
@@ -500,8 +500,8 @@
                         <div class="mb-3 d-flex align-items-center">
                             <label for="" class="col-form-label">Warranty: </label>
                             <div class="ms-3 d-flex">
-                               <div class="me-2">  Yes <input type="radio" name='Warranty' class=""></div>
-                               <div class="me-2"> No <input type="radio" name='Warranty' class=""></div>
+                                <div class="me-2"> Yes <input type="radio" name='Warranty' class=""></div>
+                                <div class="me-2"> No <input type="radio" name='Warranty' class=""></div>
                             </div>
                         </div>
                         <div class="mb-3">
@@ -527,8 +527,15 @@
 
                         </div>
                         <div class="form-check form-switch d-flex align-items-center">
-                            <input class="form-check-input" type="checkbox" role="switch">
-                            <label for="" class="col-form-label ms-2">Eligible for check-out </label>
+                            <input class="form-check-input" type="checkbox" role="switch" id="check-out">
+                            <label for="check-out" class="col-form-label ms-2">Eligible for check-out </label>
+                        </div>
+                        <div class="mb-3 d-flex flex-column  ">
+                            <label for="" class="col-form-label">Status: </label>
+                            <div class=" d-flex">
+                                <div class="me-2"><input type="radio" name='Status' class=""> Available </div>
+                                <div class="me-2"><input type="radio" name='Status' class=""> Checked out</div>
+                            </div>
                         </div>
 
                     </form>
@@ -548,26 +555,23 @@
 
     <script type="text/javascript">
 
+ 
 
-
-
-
-
-
-
-
-
-        // function activeMenu(){
+        // function activeMenu() {
         //     let t = document.querySelectorAll(".items");
         //     for (let i = 0; i < t.length; i++) {
-        //         console.log(t);
-        //     }
-        // }
+                
+        //         t[i].addEventListener("click", function (event) {
+        //         //  event.preventDefault();
 
-        // function activeMenu(){
-        //     let t = document.querySelectorAll(".items");
-        //     for (let i = 0; i < t.length; i++) {
-        //         console.log(t);
+
+        //         if( event.target.parentNode.classList.contains('active-link')){
+        //             event.target.parentNode.classList.remove('active-link')
+        //         }else{
+        //              event.target.parentNode.classList.add('active-link');
+        //         }
+                
+        //         });
         //     }
         // }
 

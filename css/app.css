@@ -302,6 +302,10 @@ body {
   margin-right: 3px;
   color: #2196f3;
 }
+.page-content .menuBar .items .active-link {
+  color: white;
+  background: #f76969;
+}
 .page-content .menuBar .items:hover {
   background: #f76969;
 }
