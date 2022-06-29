@@ -461,27 +461,19 @@
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <label for="" class="col-form-label">Name</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label for="" class="col-form-label">Est Cost</label>
-                            <input type="number" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label for="" class="col-form-label">Replacement Cost</label>
-                            <input type="number" class="form-control">
+                            <label for="" class="col-form-label">Photo</label>
+                            <input type="file" class="form-control">
                         </div>
                         <div class="mb-3">
                             <label for="" class="col-form-label">Asset ID</label>
                             <input type="number" class="form-control">
                         </div>
                         <div class="mb-3">
-                            <label for="" class="col-form-label">Location</label>
-                            <input type="text" class="form-control">
+                            <label for="" class="col-form-label">Company ID Number</label>
+                            <input type="number" class="form-control">
                         </div>
                         <div class="mb-3">
-                            <label for="" class="col-form-label">Area</label>
+                            <label for="" class="col-form-label">Name</label>
                             <input type="text" class="form-control">
                         </div>
                         <div class="mb-3">
@@ -489,7 +481,11 @@
                             <input type="text" class="form-control">
                         </div>
                         <div class="mb-3">
-                            <label for="" class="col-form-label">Brand</label>
+                            <label for="message-text" class="col-form-label">Desctiption:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Manufacturer</label>
                             <input type="text" class="form-control">
                         </div>
                         <div class="mb-3">
@@ -497,17 +493,44 @@
                             <input type="text" class="form-control">
                         </div>
                         <div class="mb-3">
-                            <label for="" class="col-form-label">Serial</label>
+                            <label for="" class="col-form-label">Serial Number: </label>
+                            <input type="number" class="form-control">
+                        </div>
+
+                        <div class="mb-3 d-flex align-items-center">
+                            <label for="" class="col-form-label">Warranty: </label>
+                            <div class="ms-3 d-flex">
+                               <div class="me-2">  Yes <input type="radio" name='Warranty' class=""></div>
+                               <div class="me-2"> No <input type="radio" name='Warranty' class=""></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Notes:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Asset Manager</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Department</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Location</label>
                             <input type="text" class="form-control">
                         </div>
                         <div class="mb-3">
-                            <label for="" class="col-form-label">Purchase Date</label>
-                            <input type="date" class="form-control">
+
+
                         </div>
-                        <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Desctiption:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
+                        <div class="form-check form-switch d-flex align-items-center">
+                            <input class="form-check-input" type="checkbox" role="switch">
+                            <label for="" class="col-form-label ms-2">Eligible for check-out </label>
                         </div>
+
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -530,7 +553,7 @@
 
 
 
-        
+
 
 
 
