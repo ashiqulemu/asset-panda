@@ -62,7 +62,7 @@
                                 <a class="nav-link" href="">Asset Manager</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"  data-bs-toggle="modal" data-bs-target="#addNewUser">Add user</a>
+                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#addNewUser">Add user</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="">Location</a>
@@ -76,7 +76,16 @@
                             <li class="nav-item">
                                 <a class="nav-link" href=" ">Vendors</a>
                             </li>
-                           
+                            <li class="nav-item dropdown" name="permission">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownItem" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./images/user.png" width="25px" class="rounded-circle" alt="">
+                                </a>
+                                <ul class="dropdown-menu  border-0 shadow-lg" aria-labelledby="dropdownItem" >
+                                    <li><a class="dropdown-item" href="#">menus</a></li>
+                                    <li><a class="dropdown-item" href="#">menus</a></li> 
+                                </ul>
+                            </li>
                              
                         </ul>
                     </div>
@@ -120,6 +129,7 @@
                 <table class="  table-custom shadow-sm bg-white" style="width:100%">
                     <thead>
                         <tr>
+                            <th>#</th>
                             <th style="width: 15%;">Name</th>
                             <th>Cost</th>
                             <th>Area</th>
@@ -135,6 +145,7 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td> <input type="checkbox" class="form-check-input" ></td>
                             <td style="width: 15%;">Ashiqul Islam</td>
                             <td>2500</td>
                             <td>Home</td>
@@ -149,175 +160,17 @@
                                         data-icon="entypo:text-document-inverted"></span></a>
                             </td>
                             <td>
-                                Active
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                     
+                                  </div>
                             </td>
                             <td>
                                 <a href="./view-assets.html"><span class="iconify txt-secondary"
                                         data-icon="ant-design:eye-filled"></span></a>
                                 <a href=""> <span class="iconify txt-primary" data-icon="bi:trash-fill"></span> </a>
                             </td>
-                        </tr>
-                        <tr>
-                            <td>Ashiqul Islam</td>
-                            <td>2500</td>
-                            <td>Home</td>
-                            <td>Apple</td>
-                            <td>xhert</td>
-                            <td>Jashore</td>
-                            <td>Electronics</td>
-                            <td>26-june-2022</td>
-                            <td>
-                                <a href=""><span class="iconify txt-primary" data-icon="bi:camera-fill"></span></a>
-                                <a href=""> <span class="iconify txt-secondary"
-                                        data-icon="entypo:text-document-inverted"></span></a>
-                            </td>
-                            <td>
-                                Active
-                            </td>
-                            <td>
-                                <a href="./view-assets.html"><span class="iconify txt-secondary"
-                                        data-icon="ant-design:eye-filled"></span></a>
-                                <a href=""> <span class="iconify txt-primary" data-icon="bi:trash-fill"></span> </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 15%;">Ashiqul Islam</td>
-                            <td>2500</td>
-                            <td>Home</td>
-                            <td>Apple</td>
-                            <td>xhert</td>
-                            <td>Jashore</td>
-                            <td>Electronics</td>
-                            <td>26-june-2022</td>
-                            <td>
-                                <a href=""><span class="iconify txt-primary" data-icon="bi:camera-fill"></span></a>
-                                <a href=""> <span class="iconify txt-secondary"
-                                        data-icon="entypo:text-document-inverted"></span></a>
-                            </td>
-                            <td>
-                                Active
-                            </td>
-                            <td>
-                                <a href="./view-assets.html"><span class="iconify txt-secondary"
-                                        data-icon="ant-design:eye-filled"></span></a>
-                                <a href=""> <span class="iconify txt-primary" data-icon="bi:trash-fill"></span> </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Ashiqul Islam</td>
-                            <td>2500</td>
-                            <td>Home</td>
-                            <td>Apple</td>
-                            <td>xhert</td>
-                            <td>Jashore</td>
-                            <td>Electronics</td>
-                            <td>26-june-2022</td>
-                            <td>
-                                <a href=""><span class="iconify txt-primary" data-icon="bi:camera-fill"></span></a>
-                                <a href=""> <span class="iconify txt-secondary"
-                                        data-icon="entypo:text-document-inverted"></span></a>
-                            </td>
-                            <td>
-                                Active
-                            </td>
-                            <td>
-                                <a href="./view-assets.html"><span class="iconify txt-secondary"
-                                        data-icon="ant-design:eye-filled"></span></a>
-                                <a href=""> <span class="iconify txt-primary" data-icon="bi:trash-fill"></span> </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 15%;">Ashiqul Islam</td>
-                            <td>2500</td>
-                            <td>Home</td>
-                            <td>Apple</td>
-                            <td>xhert</td>
-                            <td>Jashore</td>
-                            <td>Electronics</td>
-                            <td>26-june-2022</td>
-                            <td>
-                                <a href=""><span class="iconify txt-primary" data-icon="bi:camera-fill"></span></a>
-                                <a href=""> <span class="iconify txt-secondary"
-                                        data-icon="entypo:text-document-inverted"></span></a>
-                            </td>
-                            <td>
-                                Active
-                            </td>
-                            <td>
-                                <a href="./view-assets.html"><span class="iconify txt-secondary"
-                                        data-icon="ant-design:eye-filled"></span></a>
-                                <a href=""> <span class="iconify txt-primary" data-icon="bi:trash-fill"></span> </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Ashiqul Islam</td>
-                            <td>2500</td>
-                            <td>Home</td>
-                            <td>Apple</td>
-                            <td>xhert</td>
-                            <td>Jashore</td>
-                            <td>Electronics</td>
-                            <td>26-june-2022</td>
-                            <td>
-                                <a href=""><span class="iconify txt-primary" data-icon="bi:camera-fill"></span></a>
-                                <a href=""> <span class="iconify txt-secondary"
-                                        data-icon="entypo:text-document-inverted"></span></a>
-                            </td>
-                            <td>
-                                Active
-                            </td>
-                            <td>
-                                <a href="./view-assets.html"><span class="iconify txt-secondary"
-                                        data-icon="ant-design:eye-filled"></span></a>
-                                <a href=""> <span class="iconify txt-primary" data-icon="bi:trash-fill"></span> </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 15%;">Ashiqul Islam</td>
-                            <td>2500</td>
-                            <td>Home</td>
-                            <td>Apple</td>
-                            <td>xhert</td>
-                            <td>Jashore</td>
-                            <td>Electronics</td>
-                            <td>26-june-2022</td>
-                            <td>
-                                <a href=""><span class="iconify txt-primary" data-icon="bi:camera-fill"></span></a>
-                                <a href=""> <span class="iconify txt-secondary"
-                                        data-icon="entypo:text-document-inverted"></span></a>
-                            </td>
-                            <td>
-                                Active
-                            </td>
-                            <td>
-                                <a href="./view-assets.html"><span class="iconify txt-secondary"
-                                        data-icon="ant-design:eye-filled"></span></a>
-                                <a href=""> <span class="iconify txt-primary" data-icon="bi:trash-fill"></span> </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Ashiqul Islam</td>
-                            <td>2500</td>
-                            <td>Home</td>
-                            <td>Apple</td>
-                            <td>xhert</td>
-                            <td>Jashore</td>
-                            <td>Electronics</td>
-                            <td>26-june-2022</td>
-                            <td>
-                                <a href=""><span class="iconify txt-primary" data-icon="bi:camera-fill"></span></a>
-                                <a href=""> <span class="iconify txt-secondary"
-                                        data-icon="entypo:text-document-inverted"></span></a>
-                            </td>
-                            <td>
-                                Active
-                            </td>
-                            <td>
-                                <a href="./view-assets.html"><span class="iconify txt-secondary"
-                                        data-icon="ant-design:eye-filled"></span></a>
-                                <a href=""> <span class="iconify txt-primary" data-icon="bi:trash-fill"></span> </a>
-                            </td>
-                        </tr>
+                        </tr> 
                     </tbody>
                 </table>
             </div>
